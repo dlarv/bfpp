@@ -91,6 +91,9 @@ char parse(char input[], size_t len, int debugMode) {
 				printf("Output: %d\n", val);
 				break;
 			case ',':
+				printf("Enter input: ");
+				tape[head] = getchar();
+				printf("\n");
 				break;
 			case '[':
 				pushStack(&loopStartPtrs, i);
